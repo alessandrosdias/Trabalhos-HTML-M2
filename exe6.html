@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII</title>
+</head>
+<body>
+    Formulário
+    <br>
+    <input type="text" id="checkbox">
+    <input type="submit">
+
+    <script>
+        var formSubmit = document.querySelector('#submit');
+        formSubmit.addEventListener('click', function(event) {
+        event.preventDefault();
+        //realizar operação com dados presentes no formulário
+
+        let text = "OI";
+        let code = text.charCodeAt(0);
+
+        document.getElementById("demo").innerHTML = code;
+});
+
+    </script>
+    
+</body>
+</html>

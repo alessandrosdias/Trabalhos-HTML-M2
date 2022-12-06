@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachorro</title>
+</head>
+<body>
+    <h2>Criar a classe com atributos</h2>
+    <p>Meu pet</p>
+    <p id="demo"></p>
+    <script>
+        class Dog {
+            constructor(nome ,idade, raca) {
+            this.nome = nome;
+            this.idade = idade;
+            this.raca = raca;
+            }
+        }
+
+        let myDog = new Dog("Angel", "20 anos", " Pitbull ");
+        document.getElementById("demo").innerHTML = "Nome: " + myDog.nome+ " "+ "Raça:" + myDog.raca+ "Idade:" +myDog.idade + " " ;
+    </script>
+    
+</body>
+</html>
